@@ -11,7 +11,7 @@ import streamlit as st
 import pickle
 import pandas as pd
 
-st.caption("Sleep Pattern Assessment")
+st.caption("Sleep Disorder Assessment")
 st.markdown("<h3>Please answer the following questions regarding your sleeping habits:</h3>", unsafe_allow_html=True)
 
 col1, col2, col3 = st.columns(3)
