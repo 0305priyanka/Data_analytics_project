@@ -12,7 +12,7 @@ import pickle
 import pandas as pd
 
 st.caption("Sleep Pattern Assessment")
-st.markdown("<h3>Please answer the following questions regarding your sleep habits:</h3>", unsafe_allow_html=True)
+st.markdown("<h3>Please answer the following questions regarding your sleeping habits:</h3>", unsafe_allow_html=True)
 
 col1, col2, col3 = st.columns(3)
 
@@ -60,4 +60,4 @@ with open('svm_model.pkl', 'rb') as file:
 prediction = svm_model.predict(df_pred)
 
 if btn:
-    st.write("<b>Your Sleep Pattern Assessment Result:</b>", prediction[0], unsafe_allow_html=True)
+    st.write("<b>Sleep Disorder Detected:</b>", prediction[0], unsafe_allow_html=True)
